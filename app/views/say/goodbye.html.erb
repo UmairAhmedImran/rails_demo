@@ -1,5 +1,10 @@
 <h1>Goodbye!</h1>
 <p>It was nice having you here.</p>
 <p>
+    <% @files.each do |file| %>
+    <ul>file name is: <%= file %></ul>
+    <% end %>
+</p>
+<p>
     Say <%= link_to "Hello", say_hello_path %> again.
 </p>
